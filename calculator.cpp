@@ -1,34 +1,34 @@
-#include "calculator.h"
+﻿#include "calculator.h"
 #include <cmath>
 #include <string>
 
 using namespace std::literals;
 
-void Calculator::Set(Number n) {
-    current_number_ = n;
-}
-
-Number Calculator::GetNumber() const {
+double Calculator::GetNumber() const {
     return current_number_;
 }
 
-void Calculator::Add(Number n) {
+void Calculator::Set(double n) {
+    current_number_ = n;
+}
+
+void Calculator::Add(double n) {
     current_number_ += n;
 }
 
-void Calculator::Sub(Number n) {
+void Calculator::Sub(double n) {
     current_number_ -= n;
 }
 
-void Calculator::Div(Number n) {
+void Calculator::Div(double n) {
     current_number_ /= n;
 }
 
-void Calculator::Mul(Number n) {
+void Calculator::Mul(double n) {
     current_number_ *= n;
 }
 
-void Calculator::Pow(Number n) {
+void Calculator::Pow(double n) {
     current_number_ = std::pow(current_number_, n);
 }
 
