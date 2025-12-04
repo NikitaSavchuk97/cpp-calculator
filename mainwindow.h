@@ -8,6 +8,8 @@ class MainWindow;
 }
 QT_END_NAMESPACE
 
+using Number = double;
+
 enum class Operation {
     NO_OPERATION,
     MULTIPLICATION,
@@ -57,8 +59,8 @@ private:
 
     bool has_memory_ = false;
 
-    double memory_value_ = 0.0;
-    double active_number_ = 0.0;
+    Number memory_value_ = 0.0;
+    Number active_number_ = 0.0;
 
     void SetOperation(Operation op);
     void SetText(const QString& text);

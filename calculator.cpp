@@ -4,31 +4,31 @@
 
 using namespace std::literals;
 
-double Calculator::GetNumber() const {
-    return current_number_;
-}
-
-void Calculator::Set(double n) {
+void Calculator::Set(Number n) {
     current_number_ = n;
 }
 
-void Calculator::Add(double n) {
+Number Calculator::GetNumber() const {
+    return current_number_;
+}
+
+void Calculator::Add(Number n) {
     current_number_ += n;
 }
 
-void Calculator::Sub(double n) {
+void Calculator::Sub(Number n) {
     current_number_ -= n;
 }
 
-void Calculator::Div(double n) {
+void Calculator::Div(Number n) {
     current_number_ /= n;
 }
 
-void Calculator::Mul(double n) {
+void Calculator::Mul(Number n) {
     current_number_ *= n;
 }
 
-void Calculator::Pow(double n) {
+void Calculator::Pow(Number n) {
     current_number_ = std::pow(current_number_, n);
 }
 
